@@ -1,0 +1,21 @@
+---
+title: "wine_quality"
+author: "Titouan Quintin et Simon Legrand"
+date: "08/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Import
+```{r}
+wine <- read.csv("winequality-red.csv")
+```
+
+#Visualisation
+```{r}
+plot(wine$fixed.acidity,wine$citric.acid)
+```
+
